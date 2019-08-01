@@ -16,5 +16,7 @@ pkcs12 -export -out D:\name.pfx -in D:\com.pem -inkey D:\com.key
 keytool -importkeystore -srckeystore D:\name.pfx -destkeystore D:\name.jks -srcstoretype PKCS12 -deststoretype JKS
 按照要求输入密码，然后在d盘就生成了jks文件。
 
+JKS 密钥库使用专用格式。建议使用 "keytool -importkeystore -srckeystore D:\name.jks -destkeystore D:\name.jks -deststoretype pkcs12" 迁移到行业标准格式 PKCS12。
+
 过程中的输入的密码请牢记。
 ```
