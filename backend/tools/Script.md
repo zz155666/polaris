@@ -8,7 +8,7 @@
 ```
 1、找到openssl的bin目录，找到openssl.exe文件，单击右键以管理员身份运行，打开命令行，输入命令：
 
-pkcs12 -export -out D:\name.pfx -in D:\fullchain.pem -inkey D:\private.key
+pkcs12 -export -out D:\name.pfx -in D:\com.pem -inkey D:\com.key
 ，按照要求输入两次密码，这时在d盘生成了name.pfx文件。
 
 2、用keytool工具生成jks文件：打开cmd命令工具，进入jdk的bin目录，输入命令：
